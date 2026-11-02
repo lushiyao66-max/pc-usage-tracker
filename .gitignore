@@ -1,0 +1,87 @@
+# ============================================================
+# 学习型项目：Python + C 混编（Cython / ctypes / cffi / SWIG）
+# 铁律：# 注释必须独占一行，不能写在模式后面
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+.venv/
+venv/
+env/
+.python-version
+__pypackages__/
+
+# ---------- C ----------
+*.o
+*.obj
+*.d
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.pdb
+*.gch
+*.pch
+*.gcda
+*.gcno
+*.dSYM/
+core
+core.*
+
+# Windows 上的 Python C 扩展
+*.pyd
+
+# ---------- 混合构建 ----------
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Cython 的 .pyx 生成的 .c 不要用 *.c 通配忽略，
+# 否则会把手写 C 源码一起吞掉。要忽略就写显式路径：
+# src/core/_mymodule.c
+# src/core/_mymodule.html
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 日志 / 临时 ----------
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# ---------- 密钥 ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
