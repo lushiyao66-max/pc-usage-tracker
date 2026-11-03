@@ -109,4 +109,4 @@ python -m pytest -q
 
 ## 许可证
 
-MIT，详见 [LICENSE](LICENSE)。
+MIT，详见 [LICENSE](LICENSE)      888   。
