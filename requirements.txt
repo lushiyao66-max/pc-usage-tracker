@@ -1,0 +1,12 @@
+# 由 pipreqs 生成后人工校对：
+#   pipreqs ./src --encoding=utf8 --force --savepath requirements.txt
+# 校对点：
+#   1. pipreqs 把 requests 写成了首字母大写的 Requests，pip 不区分大小写，这里统一小写；
+#   2. sqlite3 是 Python 标准库，无需安装，所以不出现在列表里；
+#   3. pywin32 提供 win32gui / win32process，仅 Windows 可用。
+psutil==7.2.2
+pywin32==312
+requests==2.34.2
+
+# 仅运行单元测试时需要，正式运行客户端不必安装
+# pytest>=8
